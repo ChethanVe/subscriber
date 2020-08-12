@@ -5,7 +5,7 @@
     "client_id": "rhome_subscriber",
     "protocol": "mqtt.MQTTv311",
     "transport": "tcp",
-    "topic": "redhood/rhome/+/#",
+    "topic": "redhood/rhome/+/uplink",
     "clean_session": true,
     "mqtt_keepalive_interval": 3600,
     "username": "reduser",
