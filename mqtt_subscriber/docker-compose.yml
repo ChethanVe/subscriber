@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mqtt_subscriber:
+    build: .
+    hostname: subscribe
+    container_name: mqtt_subscriber
+    expose:
+      - "4900"
+    ports:
+      - "4900:4900"

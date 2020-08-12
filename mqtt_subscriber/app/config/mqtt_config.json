@@ -1,0 +1,16 @@
+{
+  "mqtt": {
+    "broker_address": "101.53.155.166",
+    "mqtt_port": 1883,
+    "client_id": "rhome_subscriber",
+    "protocol": "mqtt.MQTTv311",
+    "transport": "tcp",
+    "topic": "redhood/rhome/+/#",
+    "clean_session": true,
+    "mqtt_keepalive_interval": 3600,
+    "username": "reduser",
+    "password": "1234",
+	"publisher_url": "http://101.53.155.166:4300/publish",
+    "receiver_url": "http://101.53.155.166:9000/Receiver"
+  }
+}
