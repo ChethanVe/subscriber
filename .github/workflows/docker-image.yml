@@ -11,8 +11,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file mqtt_subscriber/Dockerfile --tag my-image-name:$(date +%s)
+    - name: Checkout code
+     # run: docker build . --file mqtt_subscriber/Dockerfile --tag my-image-name:$(date +%s)
       
     - name: Build and push Docker images
       uses: docker/build-push-action@v1
@@ -21,4 +21,5 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         dockerfile: mqtt_subscriber/Dockerfile
         repository: chethanve/prototype
+        tag_with_ref: true
         tags: latest
