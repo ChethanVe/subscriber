@@ -4,7 +4,7 @@ RUN pip install paho-mqtt
 RUN pip install requests
 RUN apt-get update && apt-get install -y vim
 
-COPY ./app /app
+COPY ./mqtt_subscriber/app /app
 WORKDIR /app
 
 ENTRYPOINT ["python"]
